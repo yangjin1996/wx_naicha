@@ -1,0 +1,19 @@
+<view class="address-list">
+  <block wx:for="{{address}}" wx:key="_id">
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-id="{{item._id}}">
+      <view class="address-item border-bottom {{item.selected?'selected':''}}" bindtap="chooseAddress" data-id="{{item._id}}">
+        <view class="address-content">
+          <view class="address-name">
+            <text>收货人:{{item.name}}</text>
+            <text>{{item.phone}}</text>
+          </view>
+          <view class="address-detail">
+            收货地址:{{item.region[0]}}{{item.region[1]}}{{item.region[2]}}{{item.detail}}
+          </view>
+        </view>
+        <text class="iconfont">√</text>
+      </view>
+    </mp-slideview>
+  </block>
+</view>
+<view class="add-btn" bindtap="toAddAddress">添加地址</view>

@@ -1,0 +1,15 @@
+<view class="header-container" style="background-image:url('/images/me-bg.png')">
+  <view class="user-info">
+    <view class="user-nickname">{{userInfo.nickName}}</view>
+    <image class="user-avatar" src="{{userInfo.avatarUrl}}" bindtap="changeAvater"/>
+  </view>
+</view>
+
+<view class="menu-container">
+  <view class="menu">
+    <view class="row">我的优惠券</view>
+    <view class="row">我的会员卡</view>
+    <view class="row">领券中心</view>
+    <view class="row" bindtap="jumpMenu" data-url="/pages/address/address">我的收货地址</view>
+  </view>
+</view>

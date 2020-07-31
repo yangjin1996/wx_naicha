@@ -1,0 +1,5 @@
+<view class="buy-number-container">
+  <text catchtap="editCart" data-goods-id="{{goodsId}}" data-type="2" class="~iconfont ~iconjian1 {{buyNumber==0?'hidden':''}}"></text>
+  <text class="number {{buyNumber==0?'hidden':''}}">{{buyNumber}}</text>
+  <text catchtap="editCart" data-goods-id="{{goodsId}}" data-type="1" class="~iconfont ~iconjia"></text>
+</view>

@@ -1,0 +1,44 @@
+<view id="address">
+  <nc-address address="{{address}}"></nc-address>
+</view>
+<view class="goods-list">
+    <view wx:for="{{cart}}" wx:key="goodsId" class="goods-cell">
+      <image src="{{item.goodsImg}}" class="goods-img"></image>
+      <view class="goods-info">
+        <text class="goods-title">{{item.goodsName}}</text>
+        <text class="goods-price">￥{{item.goodsPrice}}</text>
+        <view class="buy-number-container">
+          <text catchtap="editCart" data-goods-id="{{item.goodsId}}" data-type="2" class="~iconfont ~iconjian1 {{buyNumber==0?'hidden':''}}"></text>
+          <text class="number {{item.buyNumber==0?'hidden':''}}">{{item.buyNumber}}</text>
+          <text catchtap="editCart" data-goods-id="{{item.goodsId}}" data-type="1" class="~iconfont ~iconjia"></text>
+        </view>
+      </view>
+    </view>
+</view>
+
+<view class="coupon-container">
+  <l-collapse>
+    <l-collapse-item title="使用优惠券">
+      <block wx:for="{{userCoupon}}" wx:key="_id">
+        <l-list title="" is-link="{{false}}">
+          <view slot="left-section">
+            <l-checkbox-group bindlinchange="chooseCoupon">
+              <l-checkbox key="{{item._id}}" checked="{{item.selected}}" custom="{{true}}">
+                <image class="checkbox-img" src="{{item.selected?checkboxImg.checked:checkboxImg.default}}" slot="icon" />
+                {{item.coupon.money}}元优惠券 <text class="limit-coupon" hidden="{{item.coupon.orderTotal == 0}}">（订单满{{item.coupon.orderTotal}}元可用）</text>
+              </l-checkbox>
+            </l-checkbox-group>
+          </view>
+        </l-list>
+      </block>
+    </l-collapse-item>
+  </l-collapse>
+</view>
+
+<view class="submit-container">
+  <view class="order-count">
+    <text class="actual-payment">实付款：￥{{actualPayment}}元</text>
+    <text class="order-info">订单总额￥{{orderTotal}} - 优惠券（￥{{couponMoney}}）</text>
+  </view>
+  <view class="btn" bindtap="submitOrder">提交</view>
+</view>

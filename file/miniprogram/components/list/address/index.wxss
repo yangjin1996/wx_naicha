@@ -1,0 +1,34 @@
+.address-container{
+  width:100%;
+  height:140rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+  padding:0 20rpx;
+  box-sizing: border-box;
+}
+.address{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.address-detail{
+  width:100%;
+  font-size: 32rpx;
+  font-weight: bold;
+  color:#333;
+}
+.address-detail text{
+  font-size: 28rpx;
+  font-weight:normal;
+}
+.address-info{
+  width:100%;
+  font-size: 26rpx;
+  color:#666;
+}
+.address-info text{
+  margin-right:20rpx;
+}

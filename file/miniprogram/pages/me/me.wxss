@@ -1,0 +1,48 @@
+.header-container{
+  width:100%;
+  height:300rpx;
+  background-size: 100% 240rpx;
+  background-repeat: no-repeat;
+  padding:100rpx 30rpx 0;
+  box-sizing: border-box;
+}
+.user-info{
+  width: 100%;
+  height:200rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  font-size: 38rpx;
+  color:#000;
+}
+.user-avatar{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+}
+.menu-container{
+  width:100%;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.menu{
+  width:100%;
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding:30rpx;
+  box-sizing: border-box;
+}
+.menu .row{
+  width:100%;
+  height:80rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color:#000;
+}

@@ -1,0 +1,138 @@
+.status-tab{
+  width:100%;
+  background-color: #fff;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:0;
+}
+.tab-active{
+  color:#ffce00 !important;
+  font-weight: 700 !important;
+}
+.tab-active-line{
+  background-color:#ffce00 !important;
+  width:60% !important;
+}
+.out-wrapper{
+  width:100%;
+  margin-top:100rpx;
+  box-sizing: border-box;
+}
+.list-cell-address{
+  background-color: #fff;
+  padding-left:10rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+.list-cell{
+  width:100%;
+  margin-bottom:20rpx;
+  background-color: #fff;
+}
+.order-bot{
+  margin-top:20rpx;
+  padding-right:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.total-money{
+  margin-left:10rpx;
+  font-size: 26rpx;
+  color:#ffce00;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding:10rpx;
+  box-sizing: border-box;
+}
+.list-cell-address{
+  width:100%;
+  height:80rpx;
+  line-height:80rpx;
+}
+.list-cell{
+  padding-bottom: 10rpx;
+}
+.order-again{
+  width:180rpx;
+  height:50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #333;
+  border-radius: 10rpx;
+  border:1px solid #ccc;
+  /* margin-left:73%; */
+}
+.list-cell-img{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 10rpx;
+}
+.goods-info{
+  width: 0;
+  flex: 1;
+  padding:10rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color:#666;
+  margin-left:10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods-info .create-time{
+  font-size: 20rpx;
+}
+.goods-price{
+  font-size: 28rpx;
+  /* font-weight: 600; */
+  color:#ffce00;
+  margin-right:10rpx;
+  padding:10rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods-price .goods-price-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.no-order{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+.no-order .image{
+  width:100%;
+  height:100%;
+}
+.no-order .to-cart{
+  width:300rpx;
+  height:60rpx;
+  font-weight: 700;
+  color:#ffce00;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  border: 2px solid #ffce00;
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translateX(-50%);
+}
+.empty-data{
+  text-align: center;
+  color:#999;
+  line-height: 40rpx;
+}
+.load-more{
+  text-align: center;
+  color:#999;
+  line-height: 40rpx;
+}

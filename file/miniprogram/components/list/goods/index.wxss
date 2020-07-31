@@ -1,0 +1,77 @@
+.goods-list{
+  width:100%;
+  height:100%;
+  padding:0 20rpx;
+  background:#fff;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+}
+.title{
+  width:100%;
+  height:88rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 88rpx;
+  position: absolute;
+  left:20rpx;
+  top:0;
+}
+.goods-cell{
+  display: flex;
+  font-size:24rpx;
+  margin-bottom:40rpx;
+}
+.scroll-goods-view{
+  width:100%;
+  height:100%;
+  padding-top: 88rpx;
+  box-sizing: border-box;
+}
+.goods-img{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 10rpx;
+}
+.goods-info{
+  width:0;
+  flex:1;
+  padding:10rpx 0;
+  margin-left:20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.goods-title{
+  width:100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-price{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.buy-number-container{
+  color:#ffca00;
+  width:105rpx;
+  height:32rpx;
+  position: absolute;
+  right:0;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:32rpx;
+}
+.buy-number-container .iconfont{
+  height:32rpx;
+  width:32rpx;
+}
+.buy-number-container .hidden{
+  opacity: 0;
+}

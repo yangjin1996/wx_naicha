@@ -1,0 +1,5 @@
+<view class="login-container" hidden="{{!showLogin}}">
+  <view class="login-body">
+    <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信授权登陆</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<nc-login isLogin="{{isLogin}}"></nc-login>
+<swiper
+autoplay="{{true}}"
+circular="{{true}}"
+indicator-dots="{{true}}"
+indicator-active-color="#fff"
+class="swiper-container">
+  <swiper-item wx:for="{{recommendList}}" wx:key="goods_id">
+    <image src="{{item.goods_img}}" class="swiper-img" />
+  </swiper-item>
+</swiper>
+<view class="navigate">
+  <view class="navigate-list">
+    <view class="navigate-cell" wx:for="{{navigate}}" wx:key="id">
+      <image src="{{item.img}}" class="navigate-img"></image>
+      <text class="navigate-name">{{item.name}}</text>
+    </view>
+  </view>
+</view>
+<swiper
+circular="{{true}}"
+indicator-dots="{{true}}"
+indicator-active-color="#fff"
+class="banner-container">
+  <swiper-item wx:for="{{bannerList}}" wx:key="*this">
+    <image src="{{item}}" class="swiper-img" />
+  </swiper-item>
+</swiper>

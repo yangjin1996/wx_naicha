@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "nc-address": "/components/list/address/index",
+    "nc-category": "/components/list/category/index",
+    "nc-goods": "/components/list/goods/index",
+    "nc-cart": "/components/list/cart/index"
+  },
+  "navigationBarTitleText": "点餐",
+  "enablePullDownRefresh":true
+}

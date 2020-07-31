@@ -1,0 +1,14 @@
+.body{
+  width:100%;
+  display: flex;
+  overflow: hidden;
+}
+.body-category{
+  width:180rpx;
+  height:100%;
+}
+.body-goods{
+  width:0;
+  height:100%;
+  flex:1;
+}

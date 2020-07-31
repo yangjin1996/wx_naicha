@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "nc-login":"/components/login/index"
+  }
+}

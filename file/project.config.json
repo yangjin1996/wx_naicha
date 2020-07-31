@@ -1,0 +1,110 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx82d4d19388fb14bc",
+	"projectname": "%E5%A5%B6%E8%8C%B6%E5%85%88%E7%94%9F",
+	"libVersion": "2.11.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "点餐页面",
+					"pathName": "pages/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址",
+					"pathName": "pages/address/address",
+					"query": "from=list",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/address-add/address-add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单结算",
+					"pathName": "pages/settlement/settlement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/me/me",
+					"scene": null
+				}
+			]
+		}
+	}
+}

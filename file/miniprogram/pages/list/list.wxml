@@ -1,0 +1,17 @@
+<view id="address">
+  <nc-address address="{{address}}"></nc-address>
+</view>
+<view class="body" style="height:{{bodyHeight}}px;">
+  <view class="body-category">
+    <nc-category category="{{category}}" bindchange="changeCategory"></nc-category>
+  </view>
+  <view class="body-goods">
+    <nc-goods
+    goods="{{goods}}"
+    title="{{rightTitle}}"
+    bind:loadMore="loadMore"
+    bind:editCart="editCart"></nc-goods>
+  </view>
+</view>
+<nc-cart cart="{{cart}}" bind:editCart="editCart" bind:submit="cartSubmit"></nc-cart>
+

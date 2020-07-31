@@ -1,0 +1,15 @@
+<view class="category-container">
+  <view class="category-item {{catId==item.cat_id?'active':''}}" wx:for="{{category}}" wx:key="cat_id" bindtap="changeCategory" data-cat-id="{{item.cat_id}}">
+    <block wx:if="{{item.cat_id == -1}}">
+      <view class="hot-icon">
+        <text class="~iconfont ~iconrexiaochanpin"></text>
+      </view>
+    </block>
+    <block wx:if="{{item.cat_id == -2}}">
+      <view class="discount-icon">
+        <text class="~iconfont ~iconyouhui"></text>
+      </view>
+    </block>
+    {{item.cat_name}}
+  </view>
+</view>

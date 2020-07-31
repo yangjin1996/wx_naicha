@@ -1,0 +1,39 @@
+<view class="status-tab">
+  <l-segment bind:linchange="changeTabs" active-key="{{orderStatus}}" l-active-class="tab-active" l-line-class="tab-active-line" bind:linchange="orderTab">
+    <block wx:for="{{orderTabBar}}" wx:key="state">
+      <l-segment-item tab="{{item.name}}" key="{{item.state}}"/>
+    </block>
+  </l-segment>
+</view>
+<view class="out-wrapper">
+  <view wx:for="{{list}}" wx:key="_id">
+    <view class="list-cell-address">
+      <text>{{item.adress}}({{item.consignee}})</text>
+    </view>
+    <view class="list-cell">
+      <view class="box" wx:for="{{item.goods}}" wx:for-item="goods" wx:key="goods_id">
+          <image src="{{goods.goods_img}}" class="list-cell-img" />
+          <view class="goods-info">
+            <text>{{goods.goods_name}}</text>
+            <text class="create-time">{{item.createTime}}</text>
+          </view>
+          <view class="goods-price">
+            <text class="goods-price-item">{{goods.goods_price}}</text>
+            <text class="goods-price-item">×{{goods.buyNumber}}</text>
+          </view>
+      </view>
+      <view class="order-bot">
+        <view class="total-money">￥{{item.orderTotal}}(优惠￥{{item.couponMoney}}元)</view>
+        <view class="order-again" bindtap="quickBuy" data-order-id="{{item._id}}">再来一单</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="no-order" hidden="{{hasOrder}}">
+  <image class="image" src="/images/no-order.png"></image>
+  <view class="to-cart" bindtap="toCart">开始点餐</view>
+</view>
+
+<view class="empty-data" hidden="{{order.length > 0}}">没有查询到数据</view>
+<view class="load-more" hidden="{{!hasMore}}">点击查看更多</view>

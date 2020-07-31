@@ -1,0 +1,24 @@
+<view class="cart-container-mask" hidden="{{!showList}}" bindtap="hideCartList"></view>
+<view class="cart-container">
+  <scroll-view scroll-y="true" bindscrolltolower="onScrolltolower"
+  class="cart-list-wrapper {{showList?'':'hidden'}}">
+    <view wx:for="{{cart}}" wx:key="goodsId" class="goods-cell">
+      <image src="{{item.goodsImg}}" class="goods-img"></image>
+      <view class="goods-info">
+        <view class="goods-title">{{item.goodsName}}</view>
+        <view class="goods-price">￥{{item.goodsPrice}}</view>
+        <nc-buy-number buy-number="{{item.buyNumber}}" goods-id="{{item.goodsId}}"  bind:nctap="editCart"></nc-buy-number>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="cart-count-wrapper" bindtap="toggleCartList">
+    <view class="cart-icon">
+      <image src="/images/list/cup.png" class="cart-icon-img"></image>
+    </view>
+    <view class="cart-count">
+      <view class="total">￥{{cartTotal}}</view>
+      <view>免费配送</view>
+    </view>
+    <view class="cart-submit" catchtap="cartSubmit">去结算</view>
+  </view>
+</view>

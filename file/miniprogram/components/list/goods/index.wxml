@@ -1,0 +1,13 @@
+<view class="goods-list">
+  <view class="title">{{title}}</view>
+  <scroll-view scroll-y="true" bindscrolltolower="onScrolltolower" class="scroll-goods-view">
+    <view wx:for="{{goods}}" wx:key="goods_id" class="goods-cell">
+      <image src="{{item.goods_img}}" class="goods-img"></image>
+      <view class="goods-info">
+        <text class="goods-title">{{item.goods_name}}</text>
+        <text class="goods-price">￥{{item.goods_price}}</text>
+        <nc-buy-number buy-number="{{item.buyNumber}}" goods-id="{{item.goods_id}}"  bind:nctap="editCart"></nc-buy-number>
+      </view>
+    </view>
+  </scroll-view>
+</view>
